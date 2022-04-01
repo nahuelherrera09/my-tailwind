@@ -1,9 +1,13 @@
 import React from 'react'
-import {ShoppingCartIcon} from '@heroicons/react/solid'
+import {ShoppingCartIcon} from '@heroicons/react/outline'
+
+
+
 const CartWidget = () => {
   return (
-    <div>
-     <ShoppingCartIcon/>
+    <div className='flex'> 
+     <ShoppingCartIcon className='h-5 w-5'/>
+     <div>(0)</div>
     </div>
   )
 }
