@@ -5,7 +5,7 @@ import CartWidget from './CartWidget'
 const Navbar = () => {
   return (
     <>
-        <nav className='bg-neutral-400 h-[80px] mx-auto px-6 py-3 flex justify-between items-center'>
+        <nav className='bg-white h-[80px] mx-auto px-6 py-3 flex justify-between items-center'>
            
 
             <div id='logo' className='font-sans'>
