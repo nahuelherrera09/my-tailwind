@@ -12,7 +12,7 @@ const ItemDetail = ( {item} ) => {
         <div className='flex justify-center'>  
             <div className=' m-5 flex w-fit bg-white border rounded   '>
         
-                    <img src={item.image.url} alt="" className=' w-2/4'  />
+                    <img src={item.image} alt="" className=' w-2/4'  />
                
 
                 <div className='flex flex-col mt-40 ml-4 gap-5'>

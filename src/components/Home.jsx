@@ -1,12 +1,12 @@
 import React from 'react'
-import ItemDetailContainer from './ItemDetailContainer'
-// import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer';
+// import ItemListContainer from './ItemListContainer';
 
 const Home = () => {
   return (
     <div>
-      {/* { <ItemListContainer></ItemListContainer>  } */}
-      <ItemDetailContainer></ItemDetailContainer>
+      {/* { <ItemListContainer/>   } */}
+      { <ItemDetailContainer/ > }
     </div>
   )
 }

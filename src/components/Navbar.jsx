@@ -16,9 +16,9 @@ const Navbar = () => {
            
 
                 <ul className='flex font-sans'>
-                    <li className='px-2'> <Link href="">Nosotros</Link></li>
-                    <li className='px-2'><Link href="">Categorías</Link> </li>
-                    <li className='px-2 '><Link href="">Envíos</Link></li>
+                    <li className='px-2'>Nosotros</li>
+                    <li className='px-2'>Categorías </li>
+                    <li className='px-2 '>Envíos</li>
                     <li><CartWidget></CartWidget></li>
                 </ul>
                 

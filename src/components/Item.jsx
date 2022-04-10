@@ -8,7 +8,7 @@ const Item = ( {title, stock, price, image} ) => {
         <div className=' w-2/3 mb-5 bg-white shadow-lg  '>
       
             <div>
-                <img src={image.url} alt="" className=' rounded-md' />
+                <img src={image} alt="" className=' rounded-md' />
             <div className="flex justify-between mt-2 mx-1 ">
                 <div>
                 <h3 className='text-xl'>{title}</h3>  
