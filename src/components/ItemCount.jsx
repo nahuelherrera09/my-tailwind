@@ -1,17 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ( {stock = 0, initial = 1} ) => {
     
- const [contador, setContador] = useState(1);
+ const [contador, setContador] = useState(0);
+
+    useEffect(() =>{
+        setContador(initial);
+    },[]);
 
  const increment = () =>{
-     if (contador < 5){
+     if (contador < stock){
          setContador(contador+1)
      }
  }
 
  const decrement = () =>{
-     if (contador > 1){
+     if (contador > initial){
         setContador(contador-1)        
      }
  }

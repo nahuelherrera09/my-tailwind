@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import { useParams } from "react-router"
+
 import customFetch from "../utils/customFetch";
 import ItemDetail from './ItemDetail';
 const { products } = require('../utils/products');
