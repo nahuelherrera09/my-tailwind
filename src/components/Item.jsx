@@ -24,6 +24,7 @@ const Item = ( {title, stock, price, image, id} ) => {
             <Link to={`/item/${id}`}> <BookOpenIcon className='icon1 w-5 relative'/></Link>   
             </div> 
             <ItemCount stock={stock} initial='1'> </ItemCount>
+
             </div>
         </div>
       </>
