@@ -9,15 +9,29 @@ const Navbar = () => {
            
 
             <div id='logo' className='font-sans'>
-                <h2 className='text-2xl font-semibold'>SUPPORT</h2>
-                
+              <Link to='/'> 
+               <h2 className='text-2xl font-semibold'>SUPPORT</h2>
+              </Link> 
                 
             </div>  
            
 
                 <ul className='flex font-sans'>
-                    <li className='px-2'>Nosotros</li>
-                    <li className='px-2'>Categorías </li>
+                       <li className='px-2'>Nosotros</li>
+                            
+                            <Link to='/category/91'>
+                            <li className='px-2'>Accesorios </li>
+                            </Link>
+                            <Link to='/category/92'>  
+                            <li className='px-2'>Tops</li>
+                            </Link>
+                            <Link to='/category/93'> 
+                            <li className='px-2'>Abrigos</li>
+                            </Link>
+                            <Link to='/category/94'>
+                            <li className='px-2'>Bodys</li>
+                         
+                            </Link>
                     <li className='px-2 '>Envíos</li>
                     <li><CartWidget></CartWidget></li>
                 </ul>

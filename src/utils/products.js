@@ -8,6 +8,7 @@ const products = [
         talle: "Unico",
         detail: "Gorra de gabardina bordada con nuestro logo",
         image: "https://i.ibb.co/NxPJ6sy/CAP1.jpg" ,
+        categoryId: 91,
         category:{
             name: "Accesorios",
             id: 91
@@ -23,6 +24,7 @@ const products = [
         talle: "Unico",
         detail: "Top manga larga de lurex leopardo con con abertura en manga para pasar el dedo.",
         image: "https://i.ibb.co/2cD4k1s/topblaze1.jpg" ,
+        categoryId: 92,
         category:{
             name:"Tops",
             id: 92
@@ -38,6 +40,7 @@ const products = [
         talle: "Unico",
         detail: "Campera 90’s OVERSIZE de denim rígido azul",
         image: "https://i.ibb.co/FxQVcyJ/campera90.jpg",
+        categoryId: 93,
         category:{
             name:"Abrigos",
             id: 93
@@ -53,7 +56,7 @@ const products = [
         talle: "Unico",
         detail:"Body recto satén.",
         image:"https://i.ibb.co/k6PBv76/bodymilly.jpg",
-        
+        categoryId:94,
         category:{
             name: "Bodys",
             id:94
@@ -69,7 +72,7 @@ const products = [
         talle: "M",
         detail: "Top tejido de hilo, regulable con las tiras y varias formas de usarlo.",
         image:     "https://i.ibb.co/BtG2kk2/topaddictive.jpg",
-    
+        categoryId:92,
         category:{
             name:"Tops",
             id: 92
@@ -86,6 +89,7 @@ const products = [
         detail:"Fabricada en lienzo sublimada con nuestro logo, con asas gruesas y reforzadas para que te acompañe a la facu, oficina o en un día de playa y puedas llevar todos tus essentials, estes donde estes baby!",
         image:
            "https://i.ibb.co/C9XnxQ1/supportottbag.png",
+        categoryId:91,
         category:{
             name: "Accesorios",
             id:91

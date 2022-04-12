@@ -8,7 +8,9 @@ const ItemDetail = ( {item} ) => {
     return (
     <>
         
-            
+        {    
+        item && item.image
+        ?
         <div className='flex justify-center'>  
             <div className=' m-5 flex w-fit bg-white border rounded   '>
         
@@ -34,7 +36,8 @@ const ItemDetail = ( {item} ) => {
                 </div>
             </div>
         </div>
-            
+        : <p>Cargando...</p>
+        }   
         
             
     </>
