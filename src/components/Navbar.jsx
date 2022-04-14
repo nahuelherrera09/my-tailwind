@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CartWidget from './CartWidget'
+import Logo from '../utils/img/Logo.png'
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
 
             <div id='logo' className='font-sans'>
               <Link to='/'> 
-               <h2 className='text-2xl font-semibold'>SUPPORT</h2>
+                <img src={Logo} alt="" className='w-40' />
               </Link> 
                 
             </div>  
