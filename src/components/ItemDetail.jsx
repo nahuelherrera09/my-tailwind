@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ItemCount from './ItemCount'
 import { CreditCardIcon, CashIcon, ExclamationCircleIcon } from '@heroicons/react/outline'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ( {item} ) => {
+
+    const [itemCount, setItemCount] = useState(0);
  
- 
+    const onAdd = (qty) => {
+        alert("You have selected" + qty + "items.")
+        setItemCount(qty);
+    }
+
     return (
     <>
         
@@ -28,7 +35,12 @@ const ItemDetail = ( {item} ) => {
                     <p className='text-lg'>{item.color}</p>
                     <p> {item.stock} u.</p>
 
-                    <ItemCount stock={item.stock} initial ={1}></ItemCount>
+                    {
+                        itemCount === 0 
+                    ?  <ItemCount stock={item.stock} initial ={itemCount} onAdd={onAdd}/>
+                    :  <Link to='/cart'><button className='bg-green text-black font-bold rounded-lg p-2 '>Checkout</button></Link>        
+                    }    
+
                     <div className='bg-grey opacity-80 mb-4 mx-auto'>
                        <p className='p-4 text-white'><ExclamationCircleIcon className='w-5 inline pb-1'/> Envíos GRATIS en compras mayores a $7000</p> 
                     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const ItemCount = ( {stock = 0, initial = 1} ) => {
+const ItemCount = ( {stock = 0, initial = 1, onAdd} ) => {
     
  const [contador, setContador] = useState(0);
 
@@ -15,7 +15,7 @@ const ItemCount = ( {stock = 0, initial = 1} ) => {
  }
 
  const decrement = () =>{
-     if (contador > initial){
+     if (contador > initial+1){
         setContador(contador-1)        
      }
  }
@@ -29,7 +29,7 @@ const ItemCount = ( {stock = 0, initial = 1} ) => {
                 <button onClick={increment} >+</button> <br />
             </div>
             <div className='text-lg mt-2 '> 
-                <button className='bg-black text-white rounded-lg p-2' >Agregar al carrito</button>
+                <button className='bg-black text-white rounded-lg p-2 ' onClick={() => onAdd(contador)} >Agregar al carrito</button>
             </div>    
         </div>
     </div>
