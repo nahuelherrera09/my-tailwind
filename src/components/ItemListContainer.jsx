@@ -8,13 +8,14 @@ const { products } = require('../utils/products');
 const ItemListContainer = () => {
     
     const [datos, setDatos] = useState([]);
-    const { categoryId } = useParams();
+    const { idCategory } = useParams();
+
 
 
     useEffect(() => {
         customFetch(2000,products.filter(item => {
-            if (categoryId === undefined) return item;
-            return item.categoryId === parseInt(categoryId)
+            if (idCategory === undefined) return item;
+            return item.categoryId  === parseInt(idCategory)
         }))
             .then (result => setDatos(result))
             .catch (err => console.log(err))
@@ -22,7 +23,8 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <ItemList  items = {datos}/>
+            <ItemList items = {datos}/>
+            
         </>
     )
 }
