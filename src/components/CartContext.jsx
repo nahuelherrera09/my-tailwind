@@ -14,7 +14,7 @@ const CartContextProvider = ( {children} ) => {
                 {
                     idItem: item.id,
                     imgItem: item.image,
-                    nameItem: item.name,
+                    nameItem: item.title,
                     constItem: item.price,
                     qtyItem: qty
                 }
@@ -43,4 +43,4 @@ const CartContextProvider = ( {children} ) => {
 
 
 
-export default CartContext
+export default CartContext;

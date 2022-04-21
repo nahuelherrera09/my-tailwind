@@ -20,6 +20,13 @@ const ItemListContainer = () => {
             .then (result => setDatos(result))
             .catch (err => console.log(err))
     },[datos]);
+    
+
+    useEffect(() => {
+        return (() => {
+            setDatos([]);
+        })
+    }, []);
 
     return (
         <>

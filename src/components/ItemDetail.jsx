@@ -1,15 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ItemCount from './ItemCount'
 import { CreditCardIcon, CashIcon, ExclamationCircleIcon } from '@heroicons/react/outline'
 import { Link } from 'react-router-dom'
+import CartContext from './CartContext'
 
 const ItemDetail = ( {item} ) => {
 
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
  
     const onAdd = (qty) => {
         alert("You have selected" + qty + "items.")
         setItemCount(qty);
+        test.addToCart(item,qty);
     }
 
     return (
