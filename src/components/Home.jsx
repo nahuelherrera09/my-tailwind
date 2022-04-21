@@ -2,11 +2,13 @@ import React from 'react'
 import ItemDetailContainer from './ItemDetailContainer';
 import ItemListContainer from './ItemListContainer';
 import Cart from './Cart';
+import CartContextProvider from "./CartContext"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const Home = () => {
   return (
+    <CartContextProvider>
     <Router>
         <Navbar/>
         <Routes>
@@ -17,6 +19,7 @@ const Home = () => {
         </Routes>
     
     </Router>
+    </CartContextProvider>
   )
 }
 
